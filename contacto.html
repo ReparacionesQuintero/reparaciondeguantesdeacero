@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Reparaciones Quintero</title>
+    <meta name="description"
+        content="Póngase en contacto con Reparaciones Quintero. Solicite cotizaciones para reparación de guantes, compra de cuchillería o servicios de mantenimiento.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">REPARACIONES <span class="highlight">QUINTERO</span></a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="contacto.html" class="active btn-primary">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" style="min-height: 40vh; display: flex; align-items: center;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in">Contáctenos</h1>
+            <p class="fade-in delay-1">Estamos listos para atender sus necesidades y ofrecerle el mejor servicio.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper" style="grid-template-columns: 1fr 1fr; gap: 4rem;">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 class="section-title text-left">Información de Contacto</h2>
+                    <p class="lead">Envíenos sus dudas o comentarios, con gusto las responderemos.</p>
+
+                    <div class="contact-item" style="margin-top: 2rem;">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <strong>Gerente</strong>
+                            <span>Gerardo Quintero Echeverry</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Teléfono / Celular</strong>
+                            <span>+57 3026697161</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Correo Electrónico</strong>
+                            <span>reparacionesquintero20@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <span>Carrera 1 norte #73-63, Cali - Colombia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form"
+                    style="background: var(--card-bg); padding: 2rem; border-radius: 1rem; border: 1px solid var(--border-color);">
+                    <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Envíenos un Mensaje</h2>
+
+                    <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="nombre">Nombre <span style="color: var(--accent-color);">*</span></label>
+                            <input type="text" id="nombre" placeholder="Su Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido <span style="color: var(--accent-color);">*</span></label>
+                            <input type="text" id="apellido" placeholder="Su Apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono Celular <span
+                                style="color: var(--accent-color);">*</span></label>
+                        <input type="tel" id="telefono" placeholder="Su Número de Celular" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico <span style="color: var(--accent-color);">*</span></label>
+                        <input type="email" id="email" placeholder="Su Correo Electrónico" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="producto">Seleccione uno <span style="color: var(--accent-color);">*</span></label>
+                        <select id="producto" class="form-select" required
+                            style="width: 100%; padding: 0.8rem; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-color); border-radius: 0.5rem;">
+                            <option value="" disabled selected>-- Seleccione una opción --</option>
+                            <option value="Reparar Guante">Reparar Guante</option>
+                            <option value="Cambio Pulso">Cambio Pulso</option>
+                            <option value="Compra de guante">Compra de guante</option>
+                            <option value="Compra de Cuchillería">Compra de Cuchillería</option>
+                            <option value="Compra de Piedras/Tablas">Compra de Piedras/Tablas</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Comentario o Pregunta <span
+                                style="color: var(--accent-color);">*</span></label>
+                        <textarea id="mensaje" rows="5" placeholder="Escriba su mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Reparaciones Quintero. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos | Reparaciones Quintero</title>
+    <meta name="description"
+        content="Catálogo completo de cuchillos profesionales, tablas de picar, piedras de afilar y servicios de reparación de guantes de acero.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">REPARACIONES <span class="highlight">QUINTERO</span></a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="#" class="active">Productos</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="contacto.html" class="btn-primary">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero" style="min-height: 40vh; display: flex; align-items: center;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in">Catálogo <span class="text-gradient">Profesional</span></h1>
+            <p class="fade-in delay-1">Herramientas de alta calidad para la industria cárnica y gastronómica.</p>
+        </div>
+    </header>
+
+    <!-- Guantes de Acero Inoxidable y Reparación Section (Moved to Top) -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Guantes de Acero Inoxidable y Reparación</h2>
+            <div class="grid-3">
+                <div class="card service-card">
+                    <div class="product-image zoom-trigger"
+                        onclick="openLightbox(['Guantes de Acero Innoxiadable.jpg', 'Guantes de Acero Innoxiadable(2).jpg', 'Guantes de Acero Innoxiadable(3).jpg'])">
+                        <img src="Guantes de Acero Innoxiadable.jpg" alt="Reparación Guantes">
+                        <div class="zoom-icon"><i class="fas fa-images"></i></div>
+                    </div>
+                    <h3>Reparación Estándar</h3>
+                    <p>Reconstrucción anillo por anillo. Soldamos cada argolla para garantizar la resistencia original.
+                    </p>
+                </div>
+                <div class="card service-card">
+                    <div class="product-image zoom-trigger" onclick="openLightbox(['Cambio_de_Pulso_Reparacion.jpeg'])">
+                        <img src="Cambio_de_Pulso_Reparacion.jpeg" alt="Reparación Completa">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Reparación con cambio de pulso</h3>
+                    <p>Cambio de pulso de tela a acero inoxidable y reparación del guante.</p>
+                </div>
+                <!-- Cambio de Pulso -->
+                <div class="card service-card">
+                    <div class="product-image zoom-trigger" onclick="openLightbox(['Cambio_de_pulso.jpeg'])">
+                        <img src="Cambio_de_pulso.jpeg" alt="Cambio de Pulso">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Cambio de Pulso</h3>
+                    <p>Cambio de cualquier clase de pulso a acero inoxidable con gancho ideal cuando no hay
+                        ajuste en el guante.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="product-image zoom-trigger"
+                        onclick="openLightbox(['Tensor_Guante.jpg', 'Tensor_Guante(2).jpg'])">
+                        <img src="Tensor_Guante.jpg" alt="Tensor Guante">
+                        <div class="zoom-icon"><i class="fas fa-images"></i></div>
+                    </div>
+                    <h3>Venta de Tensor</h3>
+                    <p>Si su guante le queda muy largo, lo puede ajustar a su talla con el tensor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuchillería Section -->
+    <section class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Línea de Cuchillería</h2>
+            <div class="grid-3">
+                <!-- Cuchillo Depostador Zannetti -->
+                <div class="card product-card">
+                    <div class="product-image zoom-trigger" onclick="openLightbox(['Despostador Zannetti 6.jpg'])">
+                        <img src="Despostador Zannetti 6.jpg" alt="Cuchillo Depostador Zannetti">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Cuchillo Depostador</h3>
+                    <p class="brand">ZANNETTI 6"</p>
+                    <p>Ideal para desposte y trabajos de precisión.</p>
+                </div>
+
+                <!-- Cuchillos Tramontina -->
+                <div class="card product-card">
+                    <div class="product-image zoom-trigger" onclick="openLightbox(['Despostador Tramotina 6.jpg'])">
+                        <img src="Despostador Tramotina 6.jpg" alt="Cuchillo Depostador Tramontina">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Cuchillo Depostador</h3>
+                    <p class="brand">TRAMONTINA 6"</p>
+                    <p>Acero de alta durabilidad y filo excepcional.</p>
+                </div>
+                <div class="card product-card">
+                    <div class="product-image zoom-trigger"
+                        onclick="openLightbox(['Cuchillo Tajador Tramotina12.jpg'])">
+                        <img src="Cuchillo Tajador Tramotina12.jpg" alt="Cuchillo Tajador Tramontina">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Cuchillo Tajador</h3>
+                    <p class="brand">TRAMONTINA 12"</p>
+                    <p>Robusto y fiable para cortes grandes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tablas y Afilado Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Tablas y Afilado</h2>
+            <div class="grid-3">
+                <div class="card product-card">
+                    <div class="product-image zoom-trigger" onclick="openLightbox(['Tabla de picar.png'])">
+                        <img src="Tabla de picar.png" alt="Tabla de Picar">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Tabla de Picar</h3>
+                    <p class="brand">Alta Densidad</p>
+                    <p>Polietileno de alta densidad, higiénica y duradera.</p>
+                </div>
+                <div class="card product-card">
+                    <div class="product-image zoom-trigger"
+                        onclick="openLightbox(['Piedra de AFILAR CARBORUNDUM.png'])">
+                        <img src="Piedra de AFILAR CARBORUNDUM.png" alt="Piedra de Afilar Carborundum">
+                        <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <h3>Piedras de Afilar</h3>
+                    <p class="brand">CARBORUNDUM</p>
+                    <p>La mejor calidad para un afilado profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protección Adicional Section -->
+    <section class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Protección Adicional</h2>
+            <div class="grid-3">
+                <div class="card product-card">
+                    <div class="product-image zoom-trigger"
+                        onclick="openLightbox(['Protector Acrílico.png', 'Protector Acrílico(2).png'])">
+                        <img src="Protector Acrílico.png" alt="Protector de Acrílico">
+                        <div class="zoom-icon"><i class="fas fa-images"></i></div>
+                    </div>
+                    <h3>Protector de Acrílico</h3>
+                    <p class="brand">Protección Antebrazo</p>
+                    <p>Protector para antebrazo de alta resistencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Reparaciones Quintero. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="close-lightbox" onclick="closeLightbox(event)">&times;</span>
+        <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+            <img class="lightbox-content" id="lightbox-img">
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
